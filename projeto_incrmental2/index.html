@@ -8,57 +8,98 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="cabecario">
-        <h1>Gabriel de Lima Pereira</h1>
-        <img src="img/minha_foto_redimensionada.jpeg" alt="minha_foto">
-        <p>Atualmente sou bacharelando em Engenharia de Software pela Universidade Tecnológica Federal do Paraná.</p>
-        <hr>
-    </div>
-    <nav>
+    <nav class="navbar">
         <h2>Navegação</h2>
-        <ul>
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#formacao">Formação acadêmica</a></li>
-            <li><a href="#experiencias">Experiências</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#coisas">Coisas</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#formacao">Formação acadêmica</a>
+            <a href="#experiencias">Experiências</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#coisas">Coisas</a>
+            <a href="#contato">Contato</a>
     </nav>
-    <h2 id="sobre">Sobre mim:</h2>
+    <div class="cabecario">
+        <div class="titulo">
+            <h1 class="nome">Olá eu sou<br>Gabriel de Lima Pereira</h1>
+        </div>
+        <div class="foto_minha">
+            <img src="img/minha_foto_redimensionada.png" alt="minha_foto">
+        </div>
+        <div class="linha_vertical"></div>
+        <div class="paragrafo">
+            <p>Atualmente sou bacharelando em Engenharia de Software pela Universidade Tecnológica Federal do Paraná.</p>
+        </div>
+    </div>
+    
+    <div class="subtitulos">
+        <img class="icones" src="icones/icone_user.ico" alt="icone_user">
+        <h2 id="sobre">Sobre mim:</h2>
+    </div>
+    <div class="listas">
         <ul>
             <li>
-                No meu tempo de lazer jogo algumas coisas, vejo filmes e séries, vou em grupo de jovens e faço atividades físicas
+            No meu tempo de lazer jogo algumas coisas, vejo filmes e séries, vou em grupo de jovens e faço atividades físicas
             </li>
             <li>
                 Atualmente procurando adquirir mais conhecimento técnico
             </li>
         </ul>
-    <h2 id="formacao">Formações acadêmicas:</h2>
+    </div>
+    <hr class="linha_horizontal">
+    
+    <div class="subtitulos">
+        <img class="icones" src="icones/graduacao.ico" alt="icone_formacao">
+        <h2 id="formacao">Formações acadêmicas:</h2>
+    </div>
+
+    <div class="listas">
         <ul>
             <li>
                 Formado em técnico em informática pelo colégio Leonardo da Vinci
             </li>
         </ul>
-    <h2 id="experiencias">Experiências</h2>
-    <ul>
-        <li>
-            Atualmente trabalhando como montador de equipamentos na Peso Exato Balanças
-        </li>
-    </ul>
-    <h2 id="habilidades">Habilidades</h2>
-    <ul>
-        <li>
-            Trabalho em equipe
-        </li>
-    </ul>
-    <h2 id="coisas">Minhas coisas</h2>
+    </div>
+    <hr class="linha_horizontal">
+
+    <div class="subtitulos" >
+        <img class="icones" src="icones/experiencia.ico" alt="icone_experiencias">
+        <h2 id="experiencias">Experiências</h2>
+    </div>
+
+    <div class="listas">
+        <ul>
+            <li>
+                Atualmente trabalhando como montador de equipamentos na Peso Exato Balanças
+            </li>
+        </ul>
+    </div>
+    <hr class="linha_horizontal">
+
+    <div class="subtitulos">
+        <img class="icones" src="icones/icone_user.ico" alt="icone_habilidades">
+        <h2 id="habilidades">Habilidades</h2>
+    </div>
+    <div class="listas">
+        <ul>
+            <li>
+                Trabalho em equipe
+            </li>
+        </ul>
+    </div>
+    <hr class="linha_horizontal">
+
+    <div class="subtitulos">
+        <img class="icones" src="icones/estrela.ico" alt="icone_coisas">
+        <h2 id="coisas">Minhas coisas</h2>
+    </div>
     <p><img src="icones/github.ico" alt="meu_github"><a href="https://github.com/GabrielDeLimaPereira4535" target="_blank" rel="external">Github</a></p> 
     <p><img src="icones/instagram.ico" alt="meu_insta"><a href="https://www.instagram.com/gabriel_de_lima_pereira/" target="_blank" rel="external">Instagram</a></p>
     <p><img src="icones/whatsapp.ico" alt="meu_whats"><a href="https://wa.me/5546999279850" target="_blank" rel="external">WhatsApp</a></p>
     <p><img src="icones/linkedin.ico" alt="meu_linkedin"><a href="https://www.linkedin.com/in/gabriel-de-lima-3818b2224/?isSelfProfile=true">Linkedin</a></p>
+    <hr class="linha_horizontal">
+
     <h2 id="contato">Entre em contato</h2>
-    <form>
+
+    <form action="page2.html" method="get">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
 
@@ -71,11 +112,12 @@
 
         <label for="mensagem">Mensagem:</label>
         <br>
-        <textarea id="mensagem" name="mensagem" rows="5" cols="30" required></textarea>
+        <textarea id="mensagem" name="mensagem"
+                rows="5" cols="30" required></textarea>
 
         <br><br>
 
-        <a href="page2.html" rel="next"><button type="submit">Enviar</button></a>
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
