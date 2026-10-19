@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar{
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+.cabecario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(166, 166, 226);
+    padding: 30px;
+    min-height: 360px;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Título no lado esquerdo */
+.titulo {
+    flex: 1;
+    font-size: 20px;
+    text-align: left;
+}
+
+.foto_minha img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    object-fit: cover;
+}
+
+
+.linha_vertical{
+    height: 150px;
+    border-left: 2px solid rgb(112, 112, 112);
+    margin: 0 auto;
+}
+
+.paragrafo{
+    flex: 1;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.paragrafo p {
+    margin: 0;
+}
+
+.icones{
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(166, 166, 226);
+    object-fit: cover;
+}
+
+.subtitulos{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin: 30px 20px;
+}
+
+.subtitulos h2{
+    margin: 0;
+}
+
+.listas{
+    display: block;
+    flex-direction: row;
+    margin: 0px 80px;
+    font-size: 20px;
+}
+
+.linha_horizontal{
+    color: rgb(112, 112, 112);;
+    display: flex;
+    margin: 30px 30px;
+}
