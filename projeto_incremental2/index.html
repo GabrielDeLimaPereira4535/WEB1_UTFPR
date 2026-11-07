@@ -1,123 +1,335 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
-    <link rel="shortcut icon" href="icones/topo_site.ico">
+    <meta name="description" content="Portfólio de Gabriel de Lima Pereira, estudante de Engenharia de Software na UTFPR.">
+    <title>Gabriel de Lima Pereira | Portfólio</title>
+    <link rel="shortcut icon" href="icones/toposite.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <h2>Navegação</h2>
-            <a href="#sobre">Sobre mim</a>
-            <a href="#formacao">Formação acadêmica</a>
-            <a href="#experiencias">Experiências</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#coisas">Coisas</a>
-            <a href="#contato">Contato</a>
-    </nav>
-    <div class="cabecario">
-        <div class="titulo">
-            <h1 class="nome">Olá eu sou<br>Gabriel de Lima Pereira</h1>
-        </div>
-        <div class="foto_minha">
-            <img src="img/minha_foto_redimensionada.png" alt="minha_foto">
-        </div>
-        <div class="linha_vertical"></div>
-        <div class="paragrafo">
-            <p>Atualmente sou bacharelando em Engenharia de Software pela Universidade Tecnológica Federal do Paraná.</p>
-        </div>
-    </div>
-    
-    <div class="subtitulos">
-        <img class="icones" src="icones/icone_user.ico" alt="icone_user">
-        <h2 id="sobre">Sobre mim:</h2>
-    </div>
-    <div class="listas">
-        <ul>
-            <li>
-            No meu tempo de lazer jogo algumas coisas, vejo filmes e séries, vou em grupo de jovens e faço atividades físicas
-            </li>
-            <li>
-                Atualmente procurando adquirir mais conhecimento técnico
-            </li>
-        </ul>
-    </div>
-    <hr class="linha_horizontal">
-    
-    <div class="subtitulos">
-        <img class="icones" src="icones/graduacao.ico" alt="icone_formacao">
-        <h2 id="formacao">Formações acadêmicas:</h2>
-    </div>
+    <header class="topo">
+        <nav class="navbar" aria-label="Navegação principal">
+            <a class="logo" href="#inicio">GLP<span>.</span></a>
 
-    <div class="listas">
-        <ul>
-            <li>
-                Formado em técnico em informática pelo colégio Leonardo da Vinci
-            </li>
-        </ul>
-    </div>
-    <hr class="linha_horizontal">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" aria-label="Abrir ou fechar menu">
+                <span></span><span></span><span></span>
+            </label>
 
-    <div class="subtitulos" >
-        <img class="icones" src="icones/experiencia.ico" alt="icone_experiencias">
-        <h2 id="experiencias">Experiências</h2>
-    </div>
+            <div class="nav-links">
+                <a href="#sobre">Sobre mim</a>
+                <a href="#formacao">Formação</a>
+                <a href="#experiencias">Experiências</a>
+                <a href="#cursos">Cursos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Redes</a>
+                <a class="nav-contato" href="#contato">Contato</a>
+            </div>
+        </nav>
+    </header>
 
-    <div class="listas">
-        <ul>
-            <li>
-                Atualmente trabalhando como montador de equipamentos na Peso Exato Balanças
-            </li>
-        </ul>
-    </div>
-    <hr class="linha_horizontal">
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-conteudo">
+                <span class="etiqueta"><span class="status-ponto"></span> PORTFÓLIO PESSOAL</span>
+                <p class="saudacao">Olá, seja bem-vindo!</p>
+                <h1>Eu sou <span>Gabriel de Lima Pereira</span></h1>
+                <p class="hero-descricao">
+                    Estudante de Engenharia de Software na UTFPR, com formação técnica em Informática
+                    e experiência profissional nas áreas de produção e montagem de equipamentos.
+                </p>
+                <div class="hero-botoes">
+                    <a class="botao botao-principal" href="#sobre">Conheça meu perfil</a>
+                    <a class="botao botao-secundario" href="#contato">Entre em contato</a>
+                </div>
+            </div>
 
-    <div class="subtitulos">
-        <img class="icones" src="icones/icone_user.ico" alt="icone_habilidades">
-        <h2 id="habilidades">Habilidades</h2>
-    </div>
-    <div class="listas">
-        <ul>
-            <li>
-                Trabalho em equipe
-            </li>
-        </ul>
-    </div>
-    <hr class="linha_horizontal">
+            <div class="hero-foto">
+                <div class="foto-moldura">
+                    <img src="img/minha_foto_redimensionada.png" alt="Foto de Gabriel de Lima Pereira">
+                </div>
+                <span class="decoracao decoracao-um"></span>
+                <span class="decoracao decoracao-dois"></span>
+            </div>
+        </section>
 
-    <div class="subtitulos">
-        <img class="icones" src="icones/estrela.ico" alt="icone_coisas">
-        <h2 id="coisas">Minhas coisas</h2>
-    </div>
-    <p><img src="icones/github.ico" alt="meu_github"><a href="https://github.com/GabrielDeLimaPereira4535" target="_blank" rel="external">Github</a></p> 
-    <p><img src="icones/instagram.ico" alt="meu_insta"><a href="https://www.instagram.com/gabriel_de_lima_pereira/" target="_blank" rel="external">Instagram</a></p>
-    <p><img src="icones/whatsapp.ico" alt="meu_whats"><a href="https://wa.me/5546999279850" target="_blank" rel="external">WhatsApp</a></p>
-    <p><img src="icones/linkedin.ico" alt="meu_linkedin"><a href="https://www.linkedin.com/in/gabriel-de-lima-3818b2224/?isSelfProfile=true">Linkedin</a></p>
-    <hr class="linha_horizontal">
+        <section class="secao" id="sobre">
+            <div class="titulo-secao">
+                <span class="numero-secao">01</span>
+                <div>
+                    <p class="sobretitulo">UM POUCO SOBRE MIM</p>
+                    <h2>Sobre mim</h2>
+                </div>
+            </div>
+            <div class="cartao sobre-cartao">
+                <p>
+                    Tenho 20 anos e sou estudante do 4º período de Engenharia de Software na
+                    Universidade Tecnológica Federal do Paraná (UTFPR). Também sou formado como
+                    Técnico em Informática pelo Colégio Estadual Leonardo da Vinci.
+                </p>
+                <p>
+                    Ao longo da minha trajetória profissional, adquiri experiência nas áreas de
+                    produção, montagem de equipamentos e organização de processos. Essas vivências
+                    contribuíram para desenvolver minha capacidade de trabalhar em equipe, manter
+                    a organização, lidar com metas e cumprir prazos.
+                </p>
+                <p>
+                    Tenho interesse em tecnologia e desenvolvimento de software. Busco ampliar
+                    meus conhecimentos, praticar o que aprendo na graduação e desenvolver novas
+                    habilidades que contribuam para meu crescimento pessoal e profissional.
+                </p>
+                <p>
+                    Nos momentos de lazer, gosto de jogar, assistir a filmes e séries, participar
+                    de atividades em grupo e praticar atividades físicas.
+                </p>
+            </div>
+        </section>
 
-    <h2 id="contato">Entre em contato</h2>
+        <section class="secao secao-fundo" id="formacao">
+            <div class="titulo-secao">
+                <span class="numero-secao">02</span>
+                <div>
+                    <p class="sobretitulo">MINHA JORNADA DE ESTUDOS</p>
+                    <h2>Formação acadêmica</h2>
+                </div>
+            </div>
+            <div class="grade-cartoes">
+                <article class="cartao cartao-info">
+                    <div class="icone-cartao">
+                        <img src="icones/graduacao.ico" alt="">
+                    </div>
+                    <span class="cartao-tag">Graduação em andamento · 2025–atual</span>
+                    <h3>Bacharelado em Engenharia de Software</h3>
+                    <p>Universidade Tecnológica Federal do Paraná (UTFPR).</p>
+                    <p class="detalhe-cartao">Atualmente cursando o 4º período.</p>
+                </article>
 
-    <form action="page2.html" method="get">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+                <article class="cartao cartao-info">
+                    <div class="icone-cartao">
+                        <img src="icones/graduacao.ico" alt="">
+                    </div>
+                    <span class="cartao-tag">Formação concluída · 2021–2024</span>
+                    <h3>Técnico em Informática</h3>
+                    <p>Colégio Estadual Leonardo da Vinci.</p>
+                    <p class="detalhe-cartao">Curso técnico com duração de quatro anos.</p>
+                </article>
+            </div>
+        </section>
 
-        <br><br>
+        <section class="secao" id="experiencias">
+            <div class="titulo-secao">
+                <span class="numero-secao">03</span>
+                <div>
+                    <p class="sobretitulo">MINHA TRAJETÓRIA PROFISSIONAL</p>
+                    <h2>Experiências profissionais</h2>
+                </div>
+            </div>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+            <div class="experiencias-lista">
+                <article class="cartao experiencia-cartao">
+                    <div class="icone-cartao">
+                        <img src="icones/experiencia.ico" alt="">
+                    </div>
+                    <div class="experiencia-conteudo">
+                        <span class="cartao-tag">Experiência atual</span>
+                        <h3>Montador de equipamentos</h3>
+                        <p class="empresa">Peso Exato Balanças</p>
+                        <p>
+                            Atuo na montagem e preparação de equipamentos, realizando atividades
+                            que envolvem calibração de balanças, embalagem de produtos e manutenção
+                            de determinados equipamentos.
+                        </p>
+                        <p>
+                            Também participo da preparação e entrega de lotes semanais, trabalhando
+                            em equipe para cumprir as metas de produção e os prazos estabelecidos.
+                            Em alguns períodos, a rotina exige organização e agilidade para concluir
+                            os lotes dentro de prazos mais curtos.
+                        </p>
+                        <div class="competencias">
+                            <span>Trabalho em equipe</span>
+                            <span>Calibração</span>
+                            <span>Montagem</span>
+                            <span>Metas e prazos</span>
+                        </div>
+                    </div>
+                </article>
 
-        <br><br>
+                <article class="cartao experiencia-cartao">
+                    <div class="icone-cartao">
+                        <img src="icones/experiencia.ico" alt="">
+                    </div>
+                    <div class="experiencia-conteudo">
+                        <span class="cartao-tag">Experiência anterior · 1 ano e 4 meses</span>
+                        <h3>Auxiliar de produção</h3>
+                        <p class="empresa">Magnatronic</p>
+                        <p>
+                            Trabalhei na organização e controle do estoque, acompanhando a
+                            disponibilidade de equipamentos e materiais e ajudando a manter um
+                            estoque mínimo necessário para a fabricação de novos produtos.
+                        </p>
+                        <p>
+                            Também realizava a embalagem, preparação e despacho de produtos para
+                            os clientes. As atividades eram desenvolvidas em conjunto com a equipe,
+                            seguindo a organização do processo produtivo e as metas mensais.
+                        </p>
+                        <div class="competencias">
+                            <span>Controle de estoque</span>
+                            <span>Organização</span>
+                            <span>Embalagem e despacho</span>
+                            <span>Metas mensais</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-        <label for="mensagem">Mensagem:</label>
-        <br>
-        <textarea id="mensagem" name="mensagem"
-                rows="5" cols="30" required></textarea>
+        <section class="secao secao-fundo" id="cursos">
+            <div class="titulo-secao">
+                <span class="numero-secao">04</span>
+                <div>
+                    <p class="sobretitulo">FORMAÇÃO COMPLEMENTAR</p>
+                    <h2>Cursos e certificados</h2>
+                </div>
+            </div>
+            <article class="cartao curso-cartao">
+                <div class="icone-cartao">
+                    <img src="icones/graduacao.ico" alt="">
+                </div>
+                <div>
+                    <span class="cartao-tag">Curso com certificado · 2021</span>
+                    <h3>Aprender &amp; Crescer — Sudotec</h3>
+                    <p>
+                        Curso presencial na área de programação, com carga horária de
+                        380 horas/aula, realizado em 2021.
+                    </p>
+                    <p class="detalhe-cartao">
+                        Formação complementar realizada durante minha trajetória de aprendizado
+                        em tecnologia.
+                    </p>
+                </div>
+            </article>
+            <p class="nota-cursos">
+                Também tive contato introdutório com Python por meio de estudos e cursos livres.
+                Estou em processo de aprofundamento desses conhecimentos.
+            </p>
+        </section>
 
-        <br><br>
+        <section class="secao" id="habilidades">
+            <div class="titulo-secao">
+                <span class="numero-secao">05</span>
+                <div>
+                    <p class="sobretitulo">COMPETÊNCIAS E CONHECIMENTOS</p>
+                    <h2>Habilidades</h2>
+                </div>
+            </div>
 
-        <button type="submit">Enviar</button>
-    </form>
+            <div class="habilidades-grade">
+                <article class="cartao habilidade-cartao">
+                    <h3>Competências profissionais</h3>
+                    <div class="tags-habilidades">
+                        <span>Trabalho em equipe</span>
+                        <span>Organização</span>
+                        <span>Planejamento</span>
+                        <span>Cumprimento de metas</span>
+                        <span>Gestão de prazos</span>
+                        <span>Controle de estoque</span>
+                        <span>Atenção aos detalhes</span>
+                        <span>Comprometimento</span>
+                    </div>
+                </article>
+
+                <article class="cartao habilidade-cartao">
+                    <h3>Conhecimentos em tecnologia</h3>
+                    <div class="tags-habilidades">
+                        <span>Lógica de programação</span>
+                        <span>Fundamentos de programação</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Python — introdutório</span>
+                    </div>
+                    <p class="detalhe-cartao">
+                        Conhecimentos em desenvolvimento e aprendizado contínuo por meio da graduação
+                        e de estudos pessoais.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao secao-fundo" id="projetos">
+            <div class="titulo-secao">
+                <span class="numero-secao">06</span>
+                <div>
+                    <p class="sobretitulo">ME ENCONTRE NA INTERNET</p>
+                    <h2>Redes e projetos</h2>
+                </div>
+            </div>
+            <p class="introducao-redes">
+                Acesse meus perfis e acompanhe meus estudos e projetos.
+            </p>
+            <div class="redes-grade">
+                <a class="rede-cartao cartao" href="https://github.com/GabrielDeLimaPereira4535" target="_blank" rel="noopener noreferrer">
+                    <img src="icones/github.ico" alt="">
+                    <span><strong>GitHub</strong><small>Meus projetos e códigos</small></span>
+                    <span class="seta" aria-hidden="true">↗</span>
+                </a>
+                <a class="rede-cartao cartao" href="https://www.instagram.com/gabriel_de_lima_pereira/" target="_blank" rel="noopener noreferrer">
+                    <img src="icones/instagram.ico" alt="">
+                    <span><strong>Instagram</strong><small>Meu perfil pessoal</small></span>
+                    <span class="seta" aria-hidden="true">↗</span>
+                </a>
+                <a class="rede-cartao cartao" href="https://wa.me/5546999279850" target="_blank" rel="noopener noreferrer">
+                    <img src="icones/whatsapp.ico" alt="">
+                    <span><strong>WhatsApp</strong><small>Fale comigo</small></span>
+                    <span class="seta" aria-hidden="true">↗</span>
+                </a>
+                <a class="rede-cartao cartao" href="https://www.linkedin.com/in/gabriel-de-lima-3818b2224/?isSelfProfile=true" target="_blank" rel="noopener noreferrer">
+                    <img src="icones/linkedin.ico" alt="">
+                    <span><strong>LinkedIn</strong><small>Meu perfil profissional</small></span>
+                    <span class="seta" aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="secao secao-contato" id="contato">
+            <div class="titulo-secao">
+                <span class="numero-secao">07</span>
+                <div>
+                    <p class="sobretitulo">VAMOS CONVERSAR?</p>
+                    <h2>Entre em contato</h2>
+                </div>
+            </div>
+            <div class="contato-layout">
+                <div class="contato-texto">
+                    <h3>Tem alguma pergunta ou oportunidade?</h3>
+                    <p>Preencha o formulário ao lado. Será um prazer receber sua mensagem!</p>
+                </div>
+                <form class="form-contato" action="page2.html" method="get">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+                    </div>
+                    <button class="botao botao-principal botao-enviar" type="submit">
+                        Enviar mensagem <span aria-hidden="true">→</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="logo" href="#inicio">GLP<span>.</span></a>
+        <p>Desenvolvido por Gabriel de Lima Pereira.</p>
+        <a href="#inicio" class="voltar-topo">Voltar ao topo ↑</a>
+    </footer>
 </body>
 </html>
