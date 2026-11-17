@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Compare dois textos online e descubra rapidamente as diferenças entre eles.">
+
+    <title>Comparador de Textos Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Comparador de Textos</h1>
+        <p>Descubra as diferenças entre duas versões de um texto.</p>
+    </header>
+
+    <main>
+        <section class="ferramenta">
+            <h2>Compare seus textos</h2>
+
+            <div class="campos">
+
+                <!-- TEXTO ORIGINAL -->
+                <div class="campo">
+                    <label for="texto1">Texto original</label>
+
+                    <textarea
+                        id="texto1"
+                        placeholder="Digite, cole ou importe o primeiro texto..."></textarea>
+
+                    <p id="contador1">0 palavras | 0 caracteres</p>
+
+                    <label for="arquivo1" class="botao-arquivo">
+                        Importar arquivo .txt
+                    </label>
+
+                    <input
+                        type="file"
+                        id="arquivo1"
+                        accept=".txt,text/plain"
+                        class="input-arquivo"
+                    >
+
+                    <p id="nomeArquivo1" class="nome-arquivo">
+                        Nenhum arquivo selecionado.
+                    </p>
+                </div>
+
+                <!-- TEXTO MODIFICADO -->
+                <div class="campo">
+                    <label for="texto2">Texto modificado</label>
+
+                    <textarea
+                        id="texto2"
+                        placeholder="Digite, cole ou importe o segundo texto..."></textarea>
+
+                    <p id="contador2">0 palavras | 0 caracteres</p>
+
+                    <label for="arquivo2" class="botao-arquivo">
+                        Importar arquivo .txt
+                    </label>
+
+                    <input
+                        type="file"
+                        id="arquivo2"
+                        accept=".txt,text/plain"
+                        class="input-arquivo"
+                    >
+
+                    <p id="nomeArquivo2" class="nome-arquivo">
+                        Nenhum arquivo selecionado.
+                    </p>
+                </div>
+
+            </div>
+            
+            <div class="botoes">
+                <button id="comparar">Comparar textos</button>
+
+                <button id="limpar" class="secundario">
+                    Limpar
+                </button>
+
+                <button id="carregarExemplo" class="secundario">
+                    Carregar exemplo
+                </button>
+            </div>
+
+            <p id="statusExemplo" role="status" aria-live="polite"></p>
+
+
+            <section class="resultado">
+                <h2>Resultado da comparação</h2>
+
+                <div class="legenda">
+                    <span class="adicionado">Adicionado</span>
+                    <span class="removido">Removido</span>
+                </div>
+
+                <div id="resultadoTexto" aria-live="polite">
+                    As diferenças aparecerão aqui.
+                </div>
+
+                <button id="copiar" class="secundario">
+                    Copiar resultado
+                </button>
+                <div id="notificacao" class="notificacao" role="status" aria-live="polite"></div>
+
+                <div class="historico">
+                    <h2>Histórico de comparações</h2>
+
+                    <p class="descricao-historico">
+                        Suas últimas 5 comparações ficam salvas neste navegador.
+                    </p>
+
+                    <div id="listaHistorico">
+                        <p>Nenhuma comparação salva.</p>
+                    </div>
+
+                    <button id="limparHistorico" class="secundario">
+                        Limpar histórico
+                    </button>
+                </div>
+            </section>
+        </section>
+
+        <aside class="anuncio">
+            <p>Espaço publicitário</p>
+            <span>300 x 250</span>
+        </aside>
+    </main>
+
+    <section class="instrucoes">
+        <h2>Como utilizar?</h2>
+        <p>Insira o texto original e o texto modificado nos campos acima.</p>
+        <p>Clique em "Comparar textos" para identificar as alterações.</p>
+        <p>As palavras adicionadas aparecem em verde e as removidas em vermelho.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 - Comparador de Textos</p>
+        <a href="https://gabrieldelimapereira4535.github.io/WEB1_UTFPR/projeto_incremental2/index.html"
+           target="_blank" rel="noopener noreferrer">
+            Meu site pessoal
+        </a>
+    </footer>
+
+</body>
+</html>
